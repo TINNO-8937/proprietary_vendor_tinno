@@ -64,8 +64,6 @@ PRODUCT_COPY_FILES += \
     vendor/tinno/msm8937-common/proprietary/etc/cne/wqeclient/VZW/VZW_profile4.xml:system/etc/cne/wqeclient/VZW/VZW_profile4.xml \
     vendor/tinno/msm8937-common/proprietary/etc/cne/wqeclient/VZW/VZW_profile5.xml:system/etc/cne/wqeclient/VZW/VZW_profile5.xml \
     vendor/tinno/msm8937-common/proprietary/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/etc/cne/wqeclient/VZW/VZW_profile6.xml \
-    vendor/tinno/msm8937-common/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
-    vendor/tinno/msm8937-common/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/tinno/msm8937-common/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/tinno/msm8937-common/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/tinno/msm8937-common/proprietary/etc/drc/drc_cfg_5.1.txt:system/etc/drc/drc_cfg_5.1.txt \
