@@ -115,9 +115,11 @@ PRODUCT_COPY_FILES += \
     vendor/tinno/msm8937-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/tinno/msm8937-common/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/tinno/msm8937-common/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
+    vendor/tinno/msm8937-common/proprietary/lib/hw/lights.msm8937.so:system/lib/hw/lights.msm8937.so \
     vendor/tinno/msm8937-common/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
     vendor/tinno/msm8937-common/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/tinno/msm8937-common/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
+    vendor/tinno/msm8937-common/proprietary/lib64/hw/lights.msm8937.so:system/lib64/hw/lights.msm8937.so \
     vendor/tinno/msm8937-common/proprietary/lib64/libOmxVpp.so:system/lib64/libOmxVpp.so \
     vendor/tinno/msm8937-common/proprietary/lib64/libgnsspps.so:system/lib64/libgnsspps.so \
     vendor/tinno/msm8937-common/proprietary/lib64/libstagefright_soft_flacdec.so:system/lib64/libstagefright_soft_flacdec.so \
