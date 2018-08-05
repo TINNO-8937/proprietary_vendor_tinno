@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     vendor/tinno/msm8937-common/proprietary/bin/cnd:system/bin/cnd \
     vendor/tinno/msm8937-common/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/tinno/msm8937-common/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/tinno/msm8937-common/proprietary/bin/dun-server:system/bin/dun-server \
     vendor/tinno/msm8937-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/tinno/msm8937-common/proprietary/bin/hvdcp_opti:system/bin/hvdcp_opti \
     vendor/tinno/msm8937-common/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
