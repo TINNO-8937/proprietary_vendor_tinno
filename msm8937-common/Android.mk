@@ -19,10 +19,10 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter garlic wimlite hs2 hs3,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.hardware.iop@1.0
+LOCAL_MODULE := vendor.display.color@1.0
 LOCAL_MODULE_OWNER := tinno
-LOCAL_SRC_FILES_64 := proprietary/lib64/vendor.qti.hardware.iop@1.0.so
-LOCAL_SRC_FILES_32 := proprietary/lib/vendor.qti.hardware.iop@1.0.so
+LOCAL_SRC_FILES_64 := proprietary/lib64/vendor.display.color@1.0.so
+LOCAL_SRC_FILES_32 := proprietary/lib/vendor.display.color@1.0.so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -30,10 +30,10 @@ LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := vendor.qti.hardware.iop@2.0
+LOCAL_MODULE := vendor.qti.hardware.fm@1.0
 LOCAL_MODULE_OWNER := tinno
-LOCAL_SRC_FILES_64 := proprietary/lib64/vendor.qti.hardware.iop@2.0.so
-LOCAL_SRC_FILES_32 := proprietary/lib/vendor.qti.hardware.iop@2.0.so
+LOCAL_SRC_FILES_64 := proprietary/lib64/vendor.qti.hardware.fm@1.0.so
+LOCAL_SRC_FILES_32 := proprietary/lib/vendor.qti.hardware.fm@1.0.so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -133,28 +133,6 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := embms
-LOCAL_MODULE_OWNER := tinno
-LOCAL_SRC_FILES := proprietary/app/embms/embms.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := radioconfig
-LOCAL_MODULE_OWNER := tinno
-LOCAL_SRC_FILES := proprietary/app/radioconfig/radioconfig.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := uceShimService
 LOCAL_MODULE_OWNER := tinno
 LOCAL_SRC_FILES := proprietary/app/uceShimService/uceShimService.apk
@@ -238,6 +216,26 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := QPerformance
+LOCAL_MODULE_OWNER := tinno
+LOCAL_SRC_FILES := proprietary/framework/QPerformance.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := UxPerformance
+LOCAL_MODULE_OWNER := tinno
+LOCAL_SRC_FILES := proprietary/framework/UxPerformance.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := com.qti.location.sdk
 LOCAL_MODULE_OWNER := tinno
 LOCAL_SRC_FILES := proprietary/framework/com.qti.location.sdk.jar
@@ -251,6 +249,16 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := izat.xt.srv
 LOCAL_MODULE_OWNER := tinno
 LOCAL_SRC_FILES := proprietary/framework/izat.xt.srv.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := vendor.qti.hardware.sensorscalibrate-V1.0-java
+LOCAL_MODULE_OWNER := tinno
+LOCAL_SRC_FILES := proprietary/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
